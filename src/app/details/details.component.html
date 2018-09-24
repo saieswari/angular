@@ -1,0 +1,27 @@
+<div class=menu  *ngIf="product"> 
+  
+    <img src="{{product.image}}" >
+    <table id="tmenu" >
+                  <tr id="mtr">
+                          <td><h3>NAME:</h3></td>
+                          <td><h3>{{product.name}}</h3></td>
+                      </tr>
+                      <tr id="mtr">
+                          <td><h3>Price:</h3></td>
+                          <td><h3>{{product.price}}</h3></td>
+                      </tr>
+              <tr>
+                  <td><h3>Brand Name:</h3></td>
+                          <td><h3>{{product.ingredient1}}</h3></td>
+              </tr>
+              <tr>
+                  <td><h3>ratings:</h3></td>
+                          <td><h3>{{product.ingredient2}}</h3></td>
+                  
+              </tr>
+              <tr>
+                  
+                  <td><a routerLink="/product"><button class="button">Back</button></a></td>
+              </tr>
+          </table>
+    </div>

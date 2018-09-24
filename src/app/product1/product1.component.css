@@ -1,0 +1,42 @@
+.menu{
+    float:left;
+    margin-left:80px;
+    margin-bottom:50px; 
+        height:350px;
+        width:300px;
+        background:linear-gradient(45deg,#ff512f , #dd2476);
+    
+    }
+    .order{
+    position:relative;
+    top:10px;
+    left:50px;
+    height:150px;
+    width:200px;
+    }
+    
+    
+    .detail{
+        
+        color:white;
+        background-color:black;
+        border:none;
+        height:30px;
+        opacity:1;
+        text-align:center;
+        margin-left:-50px;
+    }
+    #mtr{
+    
+        height:80px;
+    }
+    
+    .button{
+    margin-top:10px;
+    margin-left:30px;
+        height:50px;
+        width:100px;
+        background-color:black;
+        border:none;
+        color:white;
+    }

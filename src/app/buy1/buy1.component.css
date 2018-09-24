@@ -1,0 +1,22 @@
+img{
+
+    height:300px;
+    width:400px;    
+    position:absolute;
+    left:400px;
+    margin-top:-5px;
+
+}button{
+    height:50px;
+    width:100px;
+    color:black;
+    background:rgb(252, 13, 144);
+    border:none;
+font-size:14px;;
+}
+#price{
+    border:none;
+    background:black;
+    color:white;
+    height:50px;
+}

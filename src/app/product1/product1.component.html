@@ -1,0 +1,22 @@
+<div class=menu *ngFor="let list of products">
+  
+    <img src="{{list.image}}" class="order" >
+    <table id="tmenu" >
+                  <tr id="mtr">
+                          <td>NAME:</td>
+                          <td><input type=text value="{{list.name}}" name="name" class="detail"></td>
+                      </tr>
+              <tr>
+                  <td>PRICE:</td>
+                  <td><input type=text value="{{list.price}}" class="detail" name="price"></td>
+              </tr>
+              <tr>
+                  <td><a routerLink="/buy1/{{list.id}}"><button class="button">Buy</button></a></td>
+                  <td><a routerLink="/detail/{{list.id}}"><button class="button">View Details</button></a></td>
+              </tr>
+          </table>
+  
+  </div>
+  <br>
+  <br>
+  <router-outlet></router-outlet>
