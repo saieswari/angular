@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+<body>
+
+    <script>
+
+
+
+
+
+    if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            console.log( xmlhttp.responseText);
+        }
+    }
+    xmlhttp.open("GET", "dom.txt", true );
+    xmlhttp.send();    
+
+
+
+//     const xhr=new XMLHttpRequest();
+
+// xhr.onreadystatechange=function(){
+//     if(xhr.ReadState==4){
+//         if(xhr.status==200){
+//             console.log(responseText);
+//         }   
+//         if(xhr.status==404){
+//             console.log("File or Resource are not found!");
+//         }    
+//     }
+
+// }
+// xhr.withCredentials = false;
+
+
+// xhr.send();
+    </script>
+ 
+
+<h1 id="title">HTTP REQUEST-DECODE</h1>
+<a href="http://www.google.com">click here</a>
+</body>
+<html>
