@@ -1,0 +1,50 @@
+﻿
+<h1>Profile</h1>
+<!-- End Sidebar -->
+            <div class="row">
+                <!-- --------------------------------------------------------------->
+                <div class="col-md-8">
+                    <h4 class="page-title">List of Access Given</h4>
+                    <div class="card card-with-nav">
+                        <div class="card-body" >
+
+                            <div class="row mt-3 mb-1" ng-repeat="access in accesses">
+                                <div class="col-md-12">
+                                    <div class="form-group form-group-default">
+                                        <div class="form-control" > You have {{access.Type}} Access </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                        <div class="form-control" ng-if="accesses.length==0">No Access had given so far</div>
+                  </div>
+                </div>
+                <!-- --------------------------------------------------------------->
+                <div class="col-md-4">
+                    <h4 class="page-title">User Profile</h4>
+                    <div class="card card-profile">
+                        <div class="card-header" style="background-image: url('../../assets/img/mlane.jpg');">
+                            <div class="profile-picture">
+                                <div class="avatar avatar-xl">
+                                    <img src="../../assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+
+                            <div class=" user-profile text-center ">
+
+                                <div class="job">Employee Id <span class="job">:IS7060</span></div>
+                                <div class="job">Name <span class="job">:Hizrian, 19</span></div>
+                                <div class="job">Department<span class="job">:Frontend Developer</span></div>
+                                <div class="job">A man who hates loneliness</div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   >

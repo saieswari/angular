@@ -1,0 +1,54 @@
+﻿
+<h1>Request</h1>
+<div class="col-md-8">
+    <div class="card card-with-nav">
+        <div class="card-body">
+              <div class="row mt-3 mb-1">
+                <div class="col-md-6">
+                    <div class="form-group form-group-default">
+                        <label>Access Type</label>
+                        <select class="form-control"  ng-model="Id">
+                            <option ng-repeat="access in accesses" ng-value='access.Id'
+                                    
+                                    value="{{access.Id}}">
+                                {{access.Type}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 mb-1">
+                <div class="col-md-12">
+                    <div class="form-group form-group-default">
+                        <label>Reason</label>
+                        <textarea class="form-control" name="about" ng-model="reason" placeholder="Please leave your reason here" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right mt-3 mb-3">
+                <button class="btn btn-success" ng-click="submit()">Send</button>
+                <button class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------------------requested----------------------------------------------------------->
+<div class="col-md-8">
+    <div class="card card-with-nav">
+        <div class="card-body " >         
+            <div class="row mt-3 mb-1">
+                <div class="col-md-12">
+                    <label>Recent Requests</label>
+                    <div class="form-group form-group-default row" ng-repeat="request in requests">
+                        <label>Request Type</label>
+                        <div class="form-control" name="about" ng-model="reason" rows="3">Internet</div>
+                        <div class="dropdown-divider"></div>
+                        <label>Request Reason</label>
+                        <div class="form-control" name="about" ng-model="reason" rows="3">I want it anyway</div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
